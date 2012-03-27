@@ -1,4 +1,7 @@
-from PySide.QtGui import QAction, QDockWidget
+try:
+    from PySide.QtGui import QAction, QDockWidget
+except ImportError:
+    from PyQt4.QtGui import QAction, QDockWidget
 
 
 class DockWidget(QDockWidget):

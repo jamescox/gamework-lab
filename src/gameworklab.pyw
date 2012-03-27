@@ -4,8 +4,11 @@ from ui.mainwindow import MainWindow
 if __name__ == '__main__':
     import sys
     
-    from PySide.QtGui import QApplication
-    
+    try:
+        from PySide.QtGui import QApplication
+    except ImportError:
+        from PyQt4.QtGui import QApplication
+      
     app = QApplication(sys.argv)
     
     main_window = MainWindow()

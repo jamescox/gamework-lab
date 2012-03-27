@@ -72,10 +72,7 @@ class Project(object):
     
     @property
     def game_url(self):
-        url = QUrl.fromLocalFile(os.path.join(os.path.abspath(self.path), 'index.html'))
-        url = QUrl.fromLocalFile(r'C:\Documents and Settings\sysman\My Documents\Dropbox\Public\Projects\gamework-lab\src\template\index.html')
-        print(url)
-        return url
+        return QUrl.fromLocalFile(os.path.join(os.path.abspath(self.path), 'index.html'))
     
     
     @property

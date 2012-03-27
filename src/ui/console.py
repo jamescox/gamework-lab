@@ -1,5 +1,8 @@
-from PySide.QtGui import QLineEdit
-
+try:
+    from PySide.QtGui import QLineEdit
+except ImportError:
+    from PyQt4.QtGui import QLineEdit
+  
 from dockwidget import DockWidget
 
 
