@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+
+<RCC version="1.0">
+  <qresource>
+    <file alias="main.js">template/game/main.js</file>
+    <file alias="index.html">template/index.html</file>
+  </qresource>
+</RCC>
